@@ -83,6 +83,9 @@ web_modules/
 .cache
 .parcel-cache
 
+#Json
+package-lock.json
+
 # Next.js build output
 .next
 out
@@ -128,3 +131,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# http
+index.http
