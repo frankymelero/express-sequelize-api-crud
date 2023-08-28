@@ -56,7 +56,89 @@ npm run dev
 
 After starting the API, it will be accessible at `http://localhost:PORT`. You can use tools like Postman or curl to interact with the API endpoints. 
 
-## Author
+
+## Endpoints
+
+### Create an Appointment
+
+- **URL:** `/appointments`
+- **Method:** `POST`
+- **Request body**: 
+```json
+{
+  "appointment": "2023-09-01T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+* **Response**: 
+```json
+{
+  "id": 1,
+  "appointment": "2023-09-01T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+
+### Get All Appointments
+
+- **URL:** `/appointments`
+- **Method:** `GET`
+- **Response**: 
+```json
+{
+  "id": 1,
+  "appointment": "2023-09-01T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+### Get Appointment by ID
+
+- **URL:** `/appointments/:id`
+- **Method:** `GET`
+- **Response**: 
+```json
+{
+  "id": 1,
+  "appointment": "2023-09-01T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+### Update Appointment
+
+- **URL:** `/appointments/:id`
+- **Method:** `PUT`
+- **Request body**: 
+```json
+{
+  "appointment": "2023-09-02T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+* **Response**: 
+```json
+{
+  "id": 1,
+  "appointment": "2023-09-02T10:00:00.000Z",
+  "email": "user@example.com",
+  "token": "secure_token"
+}
+```
+### Delete appointment
+
+- **URL:** `/appointments/:id`
+- **Method:** `DELETE`
+- **Response**: 
+```json
+{
+  "deleted": true
+}
+```
+
+## Installation
+
 This API was developed by [Franky Melero](https://github.com/frankymelero).
-
-
