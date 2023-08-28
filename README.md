@@ -139,6 +139,6 @@ After starting the API, it will be accessible at `http://localhost:PORT`. You ca
 }
 ```
 
-## Installation
+## Author
 
 This API was developed by [Franky Melero](https://github.com/frankymelero).
